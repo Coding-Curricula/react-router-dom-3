@@ -1,15 +1,25 @@
-import React from 'react'
+import React from "react";
 import { Link } from "react-router-dom";
+
+import './Navigation.css'
 
 export default function Navigation() {
   return (
-    <div>     
-        <nav>
-    <Link to="/">Home</Link>
-    <Link to="/about">About</Link>
-    <Link to="/blogs">Blogs</Link>
-    <Link to="/contact">Contact</Link>
-  </nav>
-  </div>
-  )
+    <div className="navigation-container">
+      <nav>
+        <h2 className="logo">
+          <Link to="/">Home</Link>
+        </h2>
+
+        <ul>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  );
 }
