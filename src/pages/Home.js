@@ -5,7 +5,7 @@ function Hero() {
     <div>
       <h1>Our Webpage</h1>
       <p>This talks about our site.</p>
-  <button>Click Here to Connect</button>
+      <button>Click Here to Connect</button>
     </div>
   );
 }
